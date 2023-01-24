@@ -1,0 +1,74 @@
+// меняем стили библиотеки для селекта
+.app .choices {
+  margin-bottom: 0;
+}
+
+.choices__list.is-active {
+  border: 1px solid $brand;
+  background: $secondary;
+  color: $primiry
+}
+
+.choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  padding: 0 0 0 10px;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted, .choices__list[aria-expanded] .choices__item--selectable.is-highlighted{
+  background: inherit;
+  color: $brand-200 ;
+}
+
+.choices .choices__list--dropdown, .choices__list[aria-expanded],
+.is-open .choices__list--dropdown, .is-open .choices__list[aria-expanded]{
+  border: 1px solid $border-select;
+}
+.app .choices__inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-width: 280px;
+  border: 1px solid $primiry;
+  border-radius: 3px;
+  background: $secondary;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.choices.is-open .choices__inner{
+  border: 1px solid $border-select;
+}
+.choices.is-open .choices__inner {
+  background: $active-select;
+  color: $primiry;
+}
+
+.choices__list .simplebar-wrapper{
+  height: 110px;
+}
+
+.choices__item--selectable{
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.choices[data-type*=select-one]::after{
+  background: url('../../public/image/arr-down.png') no-repeat;
+  height: 6px;
+  width: 9px;
+  border-style: solid; 
+  border-color: transparent transparent; 
+  border-width: 0; 
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform:translate(-50%, -50%);
+  margin-top: 0;
+}
+.choices[data-type*=select-one].is-open::after{
+  margin-top: 0;
+  background: url(../../public/image/arr-up.png);
+}
+

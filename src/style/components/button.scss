@@ -1,0 +1,13 @@
+.button {
+  background: $primiry;
+  color: $color-button;
+  border: 1px solid $border-button;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button--brand {
+  background: $brand;
+  color: $primiry;
+  border: 1px solid $primiry;
+}

@@ -1,0 +1,57 @@
+.header {
+  position: sticky;
+  top: 0;
+  background: $bg-header;
+  padding: 33.5px 0 31.5px;
+}
+
+.header__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 33px;
+  text-transform: uppercase;
+  display: inline-flex;
+}
+
+.logo__text {
+  color: $primiry;
+}
+
+.logo__text--color-brand {
+  color: $brand-200;
+}
+
+.header__nav {
+  
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.nav__link{
+  color: $primiry;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  &:hover{
+    color: $brand-300;
+    cursor: pointer;
+  }
+}
+
+.nav__link--active{
+  color: $brand-300;
+}

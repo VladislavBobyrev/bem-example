@@ -1,0 +1,132 @@
+.form__data {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-auto-flow: dense;
+  margin-bottom: 55px;
+  border: 0;
+  gap: 30px;
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-column: auto/ 2 span;
+
+  @media all and (max-width: 768px) {
+    grid-column: auto/ 1 span;
+  }
+}
+
+.input-custom {
+  padding: 12px 10px;
+  width: 100%;
+  height: 48px;
+  border: 1px solid $primiry;
+  border-radius: 3px;
+  background: $primiry;
+  font-size: 18px;
+  line-height: 22px;
+  border:0;
+
+  &::placeholder {
+    opacity: 1;
+    color: $secondary;
+  }
+}
+
+.progress__input {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  border: 1px solid $primiry;
+  border-radius: 3px;
+  background: $progres-bg;
+  appearance: none;
+}
+
+.progress__input ::-webkit-slider-runnable-track,
+.progress__input ::-moz-range-track {
+  height: 6px;
+  background-color: $progres-bg;
+}
+
+.progress__input::-webkit-slider-thumb {
+  cursor: pointer;
+  width: 17px;
+  height: 17px;
+  margin-top: 0;
+  border: 3px solid $progres-border;
+  border-radius: 50%;
+  background: $brand;
+  appearance: none;
+}
+
+.progress__input::-moz-range-thumb {
+  cursor: pointer;
+  padding: 0;
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  border: 3px solid $progres-border;
+  border-radius: 50%;
+  background: $brand;
+}
+
+.progress__info {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 11px;
+  font-size: 18px;
+  line-height: 22px;
+  gap: 1rem;
+}
+
+.progress__title {
+  color: $primiry;
+}
+
+.progress__value {
+  color: $progres-value;
+}
+
+.form-file {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  justify-content: center;
+  padding: 12px;
+  border: 2px solid $brand;
+  border-radius: 3px;
+  background: $progres-value;
+  color: $tertiary;
+  gap: 10px;
+}
+
+.form-file__input {
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.form__text {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.form__button {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  width: 100%;
+  max-width: 370px;
+  margin: auto;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+}

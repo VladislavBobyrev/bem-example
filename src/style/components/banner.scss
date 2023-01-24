@@ -1,0 +1,67 @@
+.banner {
+  padding: 103px 0 202px;
+  background-image: url(../../public/image/person.png);   
+  background-position: center;
+  background-size: cover;
+}
+
+.banner__button {
+  max-width: 183px;
+  width: 100%;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  padding: 15px;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.banner__footer {
+  display: flex;
+  gap: 30px;
+}
+
+.banner__item {
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 26px;
+  position: relative;
+}
+
+.banner__item::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%, -50%);
+  left: -13px;
+  width: 5px;
+  height: 1.5px;
+  background: #000;
+}
+.banner__list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 80px;
+}
+
+.banner__subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.banner__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  text-transform: uppercase;
+  max-width: 780px;
+  margin-bottom: 80px;
+}
+
+.banner__text--brand {
+  color: $brand;
+}

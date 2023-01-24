@@ -1,0 +1,23 @@
+@import './light.scss';
+
+$primiry: var(--primiry);
+$secondary: var(--secondary);
+$tertiary: var(--tertiary);
+$brand: var(--brand);
+$brand-200: var(--brand-200);
+$brand-300: var(--brand-300);
+
+$bg-header: var(--bg-header);
+$color-button: var(--color-button);
+$border-button: var(--border-button);
+$actions-subtitle: var(--actions-subtitle);
+$actions-bg: var(--actions-bg);
+$footer-bg: var(--footer-bg);
+$footer-link: var(--footer-link);
+$footer-divider: var(--footer-divider);
+$active-select: var(--active-select);
+$border-select: var(--border-select);
+$scrol-track: var(--scrol-track);
+$progres-bg: var(--progres-bg);
+$progres-border: var(--progres-border);
+$progres-value: var(--progres-value)
